@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laminechop.com - Official Global Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .badge-official {
+            background-color: #10b981;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .main-section {
+            padding: 120px 0 60px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .global-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #3b82f6, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid-profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 40px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .profile-card {
+            background-color: #1e293b;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-card.hado-card {
+            border-color: #a855f7;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #3b82f6;
+            margin-bottom: 20px;
+        }
+
+        .hado-card .profile-img {
+            border-color: #a855f7;
+        }
+
+        .profile-card h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .profile-card .nickname {
+            font-size: 16px;
+            color: #3b82f6;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .hado-card .nickname {
+            color: #a855f7;
+        }
+
+        .info-list {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .info-list p {
+            margin-bottom: 10px;
+            font-size: 15px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 5px;
+        }
+
+        .info-list strong {
+            color: #94a3b8;
+        }
+
+        .highlight-box {
+            background-color: #2e1065;
+            border: 1px solid #6b21a8;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #e9d5ff;
+        }
+
+        footer {
+            background-color: #1e293b;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 13px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Laminechop.com</div>
+                <div class="badge-official">Official Global Server</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main-section">
+            <h1 class="global-title">Global Network Profiles</h1>
+            
+            <div class="grid-profiles">
+                <!-- PROFILO 1: LAMINE YAMAL -->
+                <div class="profile-card">
+                    <img src="laminechop.png" alt="Laminechop Profile" class="profile-img" onerror="this.src='https://placehold.co'">
+                    <h1>Lamine Yamal</h1>
+                    <div class="nickname">@lamineyamal</div>
+                    
+                    <div class="info-list">
+                        <p><strong>Nome Completo:</strong> Lamine Yamal Nasraoui Ebana</p>
+                        <p><strong>Data di Nascita:</strong> 13 Luglio 2007</p>
+                        <p><strong>Squadra Attuale:</strong> FC Barcelona / Spagna</p>
+                        <p><strong>Ruolo:</strong> Ala Destra / Attaccante</p>
+                        <p><strong>Status:</strong> Membro Ufficiale</p>
+                    </div>
+                </div>
+
+                <!-- PROFILO 2: HADO -->
+                <div class="profile-card hado-card">
+                    <img src="https://placehold.co" alt="Hado Profile" class="profile-img">
+                    <h1>Hado</h1>
+                    <div class="nickname">@hado_official</div>
+                    
+                    <div class="info-list">
+                        <p><strong>Nome:</strong> Hado</p>
+                        <p><strong>Status del Profilo:</strong> Verificato Globale</p>
+                        <p><strong>Orientamento Personale:</strong> Molto Gay</p>
+                        <p><strong>Dettagli di Rete:</strong> Orgogliosamente Gay & Membro del Team</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        🏳️‍🌈 Informazione Globale Verificata
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Laminechop.com | Portale Ufficiale Aperto Globalmente all'Infrastruttura di Rete.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
